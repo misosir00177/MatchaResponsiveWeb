@@ -1,0 +1,234 @@
+/* Font Import */
+@font-face {
+    font-family: 'LINE Seeds JP';
+    src: url('/Font/LINESeedJP_TTF_Rg.ttf') format('truetype');
+}
+
+.aboreto-regular {
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* General */
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 設定預設文字大小為16px * 62.5% = 10px */
+    margin: 0 auto;
+}
+
+
+
+/* Body */
+body {
+    font-family: 'LINE Seeds JP', 'Roboto', sans-serif;
+    background: var(--Background, #191919);
+    color: #fff;
+    height: 100%;
+    margin: 2vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text Style 
+Laptop: 1440px, 0.625vw * 1440px = 9px
+Tablet: 1024px, 0.625vw * 1024px = 6.4px
+Mobile: 375px, 0.625vw * 375px = 2.34px
+*/
+@media screen and (min-width: 425px) and (max-width: 768px){
+    .text-S {
+        font-size: 1.1rem;
+    }
+
+    .text-M {
+        font-size: 1.8rem;
+    }
+
+    .text-L {
+        font-size: 2.2rem;
+    }
+
+    .text-H {
+        font-size: 2.8rem;
+    }
+
+    .text-Slogan {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .text-S {
+        font-size: 1.4rem;
+    }
+
+    .text-M {
+        font-size: 1.8rem;
+    }
+
+    .text-L {
+        font-size: 2.8rem;
+    }
+
+    .text-H {
+        font-size: 3.6rem;
+    }
+
+    .text-Slogan {
+        font-size: 4.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .text-S {
+        font-size: 1.6rem;
+    }
+
+    .text-M {
+        font-size: 2.4rem;
+    }
+
+    .text-L {
+        font-size: 3.2rem;
+    }
+
+    .text-H {
+        font-size: 4.8rem;
+    }
+
+    .text-Slogan {
+        font-size: 6.4rem;
+    }
+
+}
+
+.text-Matcha {
+    color: #8BC24A;
+}
+
+/*Link and Button*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-Font2 {
+    font-family: 'Aboreto', serif;
+}
+
+.btn-S,
+.btn-M {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 0;
+    border: 3px solid #1C8528;
+    background: #1C8528;
+    width: fit-content;
+}
+
+.btn-S {
+    border-radius: 25px;
+    padding: 0.6vw 1vw;
+}
+
+.btn-M {
+    border-radius: 50px;
+    padding: 0.6vw 1.5vw;
+}
+
+.spacer-BtnM,
+.spacer-BtnS {
+    margin: 0 0.5vw 0 0;
+}
+
+.header,
+.header-Button,
+.header-Nav {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 1vw;
+    border-radius: 100vw;
+    width: 90vw;
+    background-color: #000;
+}
+
+.header-Nav .spacer-BtnS {
+    margin: 0 3vw 0 0;
+}
+
+.header-Button .spacer-BtnM {
+    margin: 0 1vw 0 0;
+}
+
+.Scroll-Instrucion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0 10vw 0;
+}
+
+/* Cover section*/
+
+.Cover {
+    display: flex;
+    margin-top: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slogan-1,
+.Slogan-2 {
+    display: flex;
+}
+
+.Slogan-2 {
+    margin-left: 2vw;
+}
+
+.Cover-Img {
+    width: 20vw;
+    height: 30vw;
+    object-fit: contain;
+}
+
+.spacer-Intro {
+    margin: 0 0 2vw 0;
+}
+
+/* Card Section */
+.Intro-Img {
+    width: 50vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.Intro-Card {
+    display: flex;
+    width: 80vw;
+    height: 20vw;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, #8BC24A 10.61%, #191919 48.01%);
+}
+
+.Intro-Text {
+    margin-left: 5vw;
+}
+
+.spacer-cards {
+    margin: 0 0 1vw 0;
+}
+
+.spacer-Bt-cards {
+    margin: 0 0 5vw 0;
+}
