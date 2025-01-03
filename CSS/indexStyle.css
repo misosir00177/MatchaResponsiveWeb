@@ -106,6 +106,18 @@ Mobile: 375px, 0.625vw * 375px = 2.34px
 
 }
 
+/*
+ 1440px, 0.625vw * 1440px = 9px
+*/
+
+/* .text-S {
+    font-size: clamp(1.1rem, 9vw, 1.6rem);
+}
+
+.text-M {
+    font-size: clamp(1.1rem, 2.5vw, 2.4rem);
+} */
+
 .text-Matcha {
     color: #8BC24A;
 }
