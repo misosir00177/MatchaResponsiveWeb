@@ -39,7 +39,7 @@ Laptop: 1440px, 0.625vw * 1440px = 9px
 Tablet: 1024px, 0.625vw * 1024px = 6.4px
 Mobile: 375px, 0.625vw * 375px = 2.34px
 */
-/* @media screen and (min-width: 425px) and (max-width: 768px){
+@media screen and (min-width: 425px) and (max-width: 768px){
     .text-S {
         font-size: 1.1rem;
     }
@@ -104,31 +104,11 @@ Mobile: 375px, 0.625vw * 375px = 2.34px
         font-size: 6.4rem;
     }
 
-} */
+}
 
 /*
  1440px, 0.625vw * 1440px = 9px
 */
-
-.text-S{
-    font-size: clamp(0.6rem, 1vw, 1.6rem);
-}
-
-.text-M{
-    font-size: clamp(0.8rem, 2vw, 2.4rem);
-}
-
-.text-L{
-    font-size: clamp(1rem, 3vw, 3.2rem);
-}
-
-.text-H{
-    font-size: clamp(1.2rem, 4vw, 4.8rem);
-}
-
-.text-Slogan{
-    font-size: clamp(1.8rem, 6vw, 6.4rem);
-}
 
 /* .text-S {
     font-size: clamp(1.1rem, 9vw, 1.6rem);
@@ -142,6 +122,10 @@ Mobile: 375px, 0.625vw * 375px = 2.34px
     color: #8BC24A;
 }
 
+.text-DarkGreen{
+    color: #1C8528;
+}
+
 /*Link and Button*/
 a {
     text-decoration: none;
@@ -152,6 +136,7 @@ a {
     font-family: 'Aboreto', serif;
 }
 
+.btn-XS,
 .btn-S,
 .btn-M {
     display: flex;
@@ -161,6 +146,25 @@ a {
     border: 3px solid #1C8528;
     background: #1C8528;
     width: fit-content;
+}
+
+.btn-XS {
+    border-radius: 25px;
+    padding: 0.1vw 1.5vw;
+}
+
+.btn-XS-Default{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 0;
+    border: 3px solid #1C8528;
+    background: #1C8528;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 0.1vw 1.5vw;
+    background: #D9D9D9;
+    color: #363533;
 }
 
 .btn-S {
@@ -176,17 +180,6 @@ a {
 .spacer-BtnM,
 .spacer-BtnS {
     margin: 0 0.5vw 0 0;
-}
-
-.icon{
-    width: 2vw;
-    height: 2vw;
-    fill: #fff;
-}
-
-.icon-M{
-    width: 3vw;
-    height: 3vw;
 }
 
 .header,
@@ -213,97 +206,45 @@ a {
     margin: 0 1vw 0 0;
 }
 
-.Scroll-Instrucion {
+
+.Container-Row1{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 2vw;
+}
+
+.Widget{
+    border-radius: 10px;
+    background: #191919;
+}
+
+.Widget-Content{
+    padding: 2vw;
+}
+
+.Set-Status {
+    display: flex;
+    
     margin: 2vw 0 10vw 0;
 }
 
-/* Cover section*/
-
-.Cover {
+.Status-Flex{
     display: flex;
-    margin-top: 2vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.Slogan-1,
-.Slogan-2 {
-    display: flex;
-}
-
-.Slogan-2 {
-    margin-left: 2vw;
-}
-
-.Cover-Img {
-    width: 20vw;
-    height: 30vw;
-    object-fit: contain;
-}
-
-.spacer-Intro {
-    margin: 0 0 2vw 0;
-}
-
-/* Card Section */
-.Intro-Img {
-    width: 50vw;
-    height: 20vw;
-    object-fit: cover;
-}
-
-.Intro-Card {
-    display: flex;
-    width: 80vw;
-    height: 20vw;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(270deg, #8BC24A 10.61%, #191919 48.01%);
-}
-
-.Intro-Text {
-    margin-left: 5vw;
-}
-
-.spacer-cards {
-    margin: 0 0 1vw 0;
-}
-
-.spacer-Bt-cards {
-    margin: 0 0 5vw 0;
-}
-
-.DEMO{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
-    margin: 2vw 0 5vw 0;
+    margin: 2vw 0 0 0;
 }
 
-.btn-DEMO{
-    border-radius: 60px;
+.spacer-Status {
+    margin: 0 5vw 0 0;
 }
 
-.footer-Info{
+.Set-Status-Button {
     display: flex;
-    gap: 2vw;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    background-color: #000;
-    width: 100vw;
-    height: 20vw;
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
     justify-content: center;
     align-items: center;
     margin: 5vw 0 0 0;
+}
+
+.spacer-Status-Main {
+    margin: 0 0 0 5vw;
 }
