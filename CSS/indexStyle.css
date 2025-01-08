@@ -17,6 +17,7 @@ html {
     font-size: 62.5%;
     /* 設定預設文字大小為16px * 62.5% = 10px */
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 
@@ -110,6 +111,7 @@ Mobile: 375px, 0.625vw * 375px = 2.34px
  1440px, 0.625vw * 1440px = 9px
 */
 
+/*SECTION - Text Size*/
 .text-S{
     font-size: clamp(0.6rem, 1vw, 1.6rem);
 }
@@ -178,6 +180,10 @@ a {
     margin: 0 0.5vw 0 0;
 }
 
+.spacer-Slogan {
+    margin: 0 1vw 0 0;
+}
+
 .icon{
     width: 2vw;
     height: 2vw;
@@ -193,6 +199,10 @@ a {
 .header-Button,
 .header-Nav {
     display: flex;
+}
+
+.btn-Introduction{
+    border-bottom: #1C8528 solid 0.2vw;
 }
 
 .header {
@@ -218,6 +228,45 @@ a {
     justify-content: center;
     align-items: center;
     margin: 2vw 0 10vw 0;
+}
+
+.arrow {
+    
+    
+    margin: 0 20px 0 20px;
+}
+
+.arrow span {
+    display: block;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-bottom: 0.3vw solid #8BC24A;
+    border-right: 0.3vw solid #8BC24A;
+    transform: rotate(45deg);
+    
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-1vw, -1vw);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(1vw, 1vw);
+    }
 }
 
 /* Cover section*/

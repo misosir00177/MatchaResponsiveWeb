@@ -39,91 +39,32 @@ Laptop: 1440px, 0.625vw * 1440px = 9px
 Tablet: 1024px, 0.625vw * 1024px = 6.4px
 Mobile: 375px, 0.625vw * 375px = 2.34px
 */
-@media screen and (min-width: 425px) and (max-width: 768px){
-    .text-S {
-        font-size: 1.1rem;
-    }
-
-    .text-M {
-        font-size: 1.8rem;
-    }
-
-    .text-L {
-        font-size: 2.2rem;
-    }
-
-    .text-H {
-        font-size: 2.8rem;
-    }
-
-    .text-Slogan {
-        font-size: 3.2rem;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .text-S {
-        font-size: 1.4rem;
-    }
-
-    .text-M {
-        font-size: 1.8rem;
-    }
-
-    .text-L {
-        font-size: 2.8rem;
-    }
-
-    .text-H {
-        font-size: 3.6rem;
-    }
-
-    .text-Slogan {
-        font-size: 4.8rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .text-S {
-        font-size: 1.6rem;
-    }
-
-    .text-M {
-        font-size: 2.4rem;
-    }
-
-    .text-L {
-        font-size: 3.2rem;
-    }
-
-    .text-H {
-        font-size: 4.8rem;
-    }
-
-    .text-Slogan {
-        font-size: 6.4rem;
-    }
-
-}
-
-/*
- 1440px, 0.625vw * 1440px = 9px
-*/
-
-/* .text-S {
-    font-size: clamp(1.1rem, 9vw, 1.6rem);
+.text-S {
+    font-size: clamp(0.8rem, 1vw, 2.0rem);
 }
 
 .text-M {
-    font-size: clamp(1.1rem, 2.5vw, 2.4rem);
-} */
+    font-size: clamp(1rem, 2vw, 2.4rem);
+}
+
+.text-L {
+    font-size: clamp(1.4rem, 3vw, 3.2rem);
+}
 
 .text-Matcha {
     color: #8BC24A;
 }
 
-.text-DarkGreen{
+.text-DarkGreen {
     color: #1C8528;
+}
+
+.text-Bold {
+    font-weight: 900;
+}
+
+.text-Normal {
+    font-weight: 400;
 }
 
 /*Link and Button*/
@@ -135,7 +76,7 @@ a {
 .text-Font2 {
     font-family: 'Aboreto', serif;
 }
-
+.btn-XS-Default,
 .btn-XS,
 .btn-S,
 .btn-M {
@@ -143,43 +84,88 @@ a {
     align-items: center;
     align-content: center;
     flex-shrink: 0;
-    border: 3px solid #1C8528;
+
     background: #1C8528;
     width: fit-content;
-}
-
-.btn-XS {
-    border-radius: 25px;
-    padding: 0.1vw 1.5vw;
-}
-
-.btn-XS-Default{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-shrink: 0;
-    border: 3px solid #1C8528;
-    background: #1C8528;
-    width: fit-content;
-    border-radius: 25px;
-    padding: 0.1vw 1.5vw;
-    background: #D9D9D9;
-    color: #363533;
 }
 
 .btn-S {
-    border-radius: 25px;
-    padding: 0.6vw 1vw;
+    border-radius: 30px;
+    padding: 0.4vw 0.8vw;
 }
 
 .btn-M {
     border-radius: 50px;
-    padding: 0.6vw 1.5vw;
+    padding: 0.4vw 1.2vw;
+}
+
+.btn-XS{
+    background-color: #1C8528;
+}
+.btn-XS-Default,
+.btn-XS {
+    border-radius: 25px;
+    padding: 0.1vw 2.0vw;
+}
+
+.btn-XS-Default{
+    background-color: #363533;
 }
 
 .spacer-BtnM,
 .spacer-BtnS {
     margin: 0 0.5vw 0 0;
+}
+
+.spacer-Slogan {
+    margin: 0 1vw 0 0;
+}
+
+.icon{
+    width: 2vw;
+    height: 2vw;
+    fill: #fff;
+}
+
+.icon-M{
+    width: 3vw;
+    height: 3vw;
+}
+
+.header,
+.header-Button,
+.header-Nav {
+    display: flex;
+}
+
+.btn-Introduction{
+    border-bottom: #1C8528 solid 0.2vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 1vw;
+    border-radius: 100vw;
+    width: 90vw;
+    background-color: #000;
+}
+
+.header-Nav .spacer-BtnS {
+    margin: 0 3vw 0 0;
+}
+
+.header-Button .spacer-BtnM {
+    margin: 0 1vw 0 0;
+}
+
+.Whole-Page-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .header,
@@ -206,28 +192,65 @@ a {
     margin: 0 1vw 0 0;
 }
 
-
-.Container-Row1{
-    display: flex;
-    gap: 2vw;
+.Burger-Menu{
+    display: none;
+    cursor: pointer;
 }
 
-.Widget{
+.Burger-Menu div{
+    width: 2vw;
+    height: 0.2vw;
+    background: #fff;
+    margin: 0.3vw 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Container-Row1 {
+   display: flex;
+    gap: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.Container-Row2 {
+    display: flex;
+     gap: 2vw;
+     margin-top: 2vw;
+     margin-bottom: 5vw;
+     width: 100%;
+     justify-content: center;
+ }
+
+
+.Widget {
     border-radius: 10px;
     background: #191919;
+    flex: 1 1 auto;
 }
 
-.Widget-Content{
+.Widget-Content {
     padding: 2vw;
+}
+
+.CenterMe-Vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Set-Status {
     display: flex;
-    
-    margin: 2vw 0 10vw 0;
 }
 
-.Status-Flex{
+.Status-Flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,4 +270,247 @@ a {
 
 .spacer-Status-Main {
     margin: 0 0 0 5vw;
+}
+
+.icon-Rep {
+    width: 3vw;
+    height: 3vw;
+    fill: #8BC24A;
+}
+
+/* Analize Widget*/
+
+.Analize-InfoGraphic {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+}
+
+.Analize-circle-base {
+    position: absolute;
+    fill: none;
+    stroke-width: 0.8vw;
+    stroke: #8BC24A;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    cx: 5vw;
+    cy: 5vw;
+    r: 4vw;
+}
+
+.Analize-circle-line {
+    position: absolute;
+    fill: none;
+    stroke-width: 0.8vw;
+    stroke-dasharray: 40vw;
+    stroke-dashoffset: calc(40vw - (40vw * 50) / 100);
+    stroke: #1C8528;
+    stroke-linecap: round;
+    cx: -5vw;
+    cy: 5vw;
+    r: 4vw;
+    transform: rotate(-90deg);
+}
+
+.Analize-InfoGraphic-Number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Widget-Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.Analize-Equale-Text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ThemeGreen {
+    color: #8BC24A;
+    fill: #8BC24A;
+    border-color: #8BC24A;
+}
+
+.DarkGreen {
+    color: #1C8528;
+    fill: #1C8528;
+    border-color: #1C8528;
+}
+
+.Task-ColorDescription-Flex, .Weekly-ColorDescription-Flex {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.Analize-Task-Color {
+    display: flex;
+    gap: 1vw;
+    padding-top: 2vw;
+}
+
+.Analize {
+    height: fit-content;
+}
+
+.Dot {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+}
+
+.Dot.DarkGreen{
+    background-color: #1C8528;
+}
+
+.Dot.ThemeGreen{
+    background-color: #8BC24A;
+}
+
+table{
+    margin-top: 2vw;
+    width: 50vw;
+}
+
+table th, table td{
+    text-align: center;
+}
+
+.btn-NewTask{
+    margin-top: 2vw;
+}
+
+/* Progress Bar */
+
+
+
+.ProgressBar{
+    position: relative;
+    padding-top: 2vw;
+}
+
+.Stick-ToDo{
+    position: absolute;
+    width: 20vw;
+    height: 1vw;
+    background: #1C8528;
+}
+
+.Stick-Done{
+    position: absolute;
+    width: calc(20vw * 0.25);
+    height: 1vw;
+    background: #8BC24A;
+}
+
+.Analize-Weekly-Color {
+    display: flex;
+    gap: 1vw;
+    padding-top: 4vw;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 95%;
+    }
+    .Container-Row1, .Container-Row2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    .Widget{
+        flex: 1 1 auto;
+        width : 100%;
+    }
+
+    .header-Button , .header-Nav{
+        display: none;
+    }
+
+    .ProgressBar{
+        width: 90%; 
+    }
+
+    .Stick-ToDo{
+        position: absolute;
+        width: 1em;
+        height: 1vw;
+        background: #1C8528;
+    }
+    
+    .Stick-Done{
+        position: absolute;
+        width: calc(1em * 0.25);
+        height: 1vw;
+        background: #8BC24A;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .Stick-ToDo{
+        position: absolute;
+        width: 80vw;
+        height: 2vw;
+        background: #1C8528;
+    }
+
+    .Stick-Done{
+        position: absolute;
+        width: calc(80vw * 0.25);
+        height: 2vw;
+        background: #8BC24A;
+    }
+
+    .Content-Center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Analize-InfoGraphic-Number{
+        font-size: clamp(0.8rem, 2vw, 1.4rem);
+    }
+
+
+    .Analize-circle-base {
+        position: absolute;
+        fill: none;
+        stroke-width: 1vw;
+        stroke: #8BC24A;
+        stroke-dashoffset: 0;
+        stroke-linecap: round;
+        cx: 5vw;
+        cy: 5vw;
+        r: 4vw;
+    }
+    
+    .Analize-circle-line {
+        position: absolute;
+        fill: none;
+        stroke-width: 1vw;
+        stroke-dasharray: 40vw;
+        stroke-dashoffset: calc(40vw - (40vw * 50) / 100);
+        stroke: #1C8528;
+        stroke-linecap: round;
+        cx: -5vw;
+        cy: 5vw;
+        r: 4vw;
+        transform: rotate(-90deg);
+    }
 }
