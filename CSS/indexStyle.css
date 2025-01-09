@@ -15,7 +15,7 @@ html {
     overflow-x: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
-    /* ³]©w¹w³]¤å¦r¤j¤p¬°16px * 62.5% = 10px */
+    /* è¨­å®šé è¨­æ–‡å­—å¤§å°ç‚º16px * 62.5% = 10px */
     margin: 0 auto;
     scroll-behavior: smooth;
 }
