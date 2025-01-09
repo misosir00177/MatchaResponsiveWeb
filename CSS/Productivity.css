@@ -318,31 +318,7 @@ a {
     height: 10vw;
 }
 
-.Analize-circle-base {
-    position: absolute;
-    fill: none;
-    stroke-width: 0.8vw;
-    stroke: #8BC24A;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    cx: 5vw;
-    cy: 5vw;
-    r: 4vw;
-}
 
-.Analize-circle-line {
-    position: absolute;
-    fill: none;
-    stroke-width: 0.8vw;
-    stroke-dasharray: 40vw;
-    stroke-dashoffset: calc(40vw - (40vw * 50) / 100);
-    stroke: #1C8528;
-    stroke-linecap: round;
-    cx: -5vw;
-    cy: 5vw;
-    r: 4vw;
-    transform: rotate(-90deg);
-}
 
 .Analize-InfoGraphic-Number {
     position: absolute;
