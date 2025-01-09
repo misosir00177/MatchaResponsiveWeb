@@ -12,7 +12,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="/CSS/Productivity.css">
+    <link rel="stylesheet" href="/CSS/Spendings.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,6 +76,10 @@
             <path
                 d="M480-80q-137 0-228.5-94T160-408h80q0 107 68 177.5T480-160q104 0 172-70.5T720-408h80q0 140-91.5 234T480-80ZM200-480q-17 0-28.5-11.5T160-520q0-17 11.5-28.5T200-560q17 0 28.5 11.5T240-520q0 17-11.5 28.5T200-480Zm180 0q-17 0-28.5-11.5T340-520q0-17 11.5-28.5T380-560q17 0 28.5 11.5T420-520q0 17-11.5 28.5T380-480Zm200 0q-17 0-28.5-11.5T540-520q0-17 11.5-28.5T580-560q17 0 28.5 11.5T620-520q0 17-11.5 28.5T580-480Zm180 0q-17 0-28.5-11.5T720-520q0-17 11.5-28.5T760-560q17 0 28.5 11.5T800-520q0 17-11.5 28.5T760-480ZM290-590q-17 0-28.5-11.5T250-630q0-17 11.5-28.5T290-670q17 0 28.5 11.5T330-630q0 17-11.5 28.5T290-590Zm380 0q-17 0-28.5-11.5T630-630q0-17 11.5-28.5T670-670q17 0 28.5 11.5T710-630q0 17-11.5 28.5T670-590Zm-190-10q-17 0-28.5-11.5T440-640q0-17 11.5-28.5T480-680q17 0 28.5 11.5T520-640q0 17-11.5 28.5T480-600ZM380-700q-17 0-28.5-11.5T340-740q0-17 11.5-28.5T380-780q17 0 28.5 11.5T420-740q0 17-11.5 28.5T380-700Zm200 0q-17 0-28.5-11.5T540-740q0-17 11.5-28.5T580-780q17 0 28.5 11.5T620-740q0 17-11.5 28.5T580-700ZM480-800q-17 0-28.5-11.5T440-840q0-17 11.5-28.5T480-880q17 0 28.5 11.5T520-840q0 17-11.5 28.5T480-800Zm0 392Z" />
         </symbol>
+
+        <symbol id="icon-Cake" viewBox="0 -960 960 960">
+            <path d="M160-80q-17 0-28.5-11.5T120-120v-219q0-24.75 17.63-42.38Q155.25-399 180-399h27v-182q0-24.75 17.63-42.38Q242.25-641 267-641h183v-64q-20-14-30.5-30.53-10.5-16.54-10.5-39.88 0-14.59 5.5-28.09T430-827l50-53 50 53q10 10 16 23.5t6 28.09q0 23.34-11 39.88Q530-719 510-705v64h183q24.75 0 42.38 17.62Q753-605.75 753-581v182h27q24.75 0 42.38 17.62Q840-363.75 840-339v219q0 17-11.5 28.5T800-80H160Zm107-319h426v-182H267v182Zm-87 259h600v-199H180v199Zm87-259h426-426Zm-87 259h600-600Zm600-259H180h600Z"/>
+        </symbol>
     </svg>
 
     <div class="Whole-Page-Content">
@@ -85,9 +89,9 @@
                 <nav class="header-Nav">
                     <a class="text-M btn-Introduction hover-underline-animation" href="/index.html">介紹</a>
                     <div class="spacer-BtnS"></div>
-                    <a class="text-M btn-Productivity" href="/HTML/Productivity.html">專注力</a>
+                    <a class="text-M btn-Productivity hover-underline-animation" href="/HTML/Productivity.html">專注力</a>
                     <div class="spacer-BtnS"></div>
-                    <a class="text-M hover-underline-animation" href="/HTML/Spendings.html">花費紀錄</a>
+                    <a class="text-M btn-Spending" href="#">花費紀錄</a>
                     <div class="spacer-BtnS"></div>
                     <a class="text-M hover-underline-animation" href="#">生活回顧</a>
                 </nav>
@@ -120,33 +124,24 @@
             <div class="Container-Row1">
                 <div class="Widget Widget-Entering">
                     <div class="Widget-Content">
-                        <div class="text-M text-Bold">進入狀況</div>
+                        <div class="text-M text-Bold">限額調整</div>
                         <div class="Content-Center">
                             <div class="Centring-Null">
                                 <div class="responsive-Flex-Row">
                                     <div class="Execute Status-Flex">
                                         <a class="btn-XS btn-Execute" href="#">
-                                            <div class="text-M" href="#">執行</div>
+                                            <div class="text-M" href="#">從明天加預算</div>
                                         </a>
                                         <div class="spacer-Status"></div>
-                                        <div class="text-M text-DarkGreen" href="#">01:40:02</div>
+                                        <div class="text-M text-DarkGreen" href="#">$300</div>
                                     </div>
                                     <div class="Rest Status-Flex">
                                         <a class="btn-XS-Default btn-Rest" href="#">
-                                            <div class="text-M" href="#">休息</div>
+                                            <div class="text-M" href="#">從省下加預算</div>
                                         </a>
                                         <div class="spacer-Status"></div>
-                                        <div class="text-M" href="#">00:20:00</div>
+                                        <div class="text-M" href="#">$500</div>
                                     </div>
-                                </div>
-                                <div class="Set-Status-Button">
-                                    <a class="btn-XS-Default btn-Reset" href="#">
-                                        <div class="text-M" href="#">重設</div>
-                                    </a>
-                                    <div class="spacer-Status-Main"></div>
-                                    <a class="btn-XS-Default btn-StopAndStart" href="#">
-                                        <div class="text-M" href="#">開始</div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +149,7 @@
                 </div>
                 <div class="Widget Widget-Status">
                     <div class="Widget-Content">
-                        <div class="text-M text-Bold Widget-Title">分析</div>
+                        <div class="text-M text-Bold Widget-Title">今日花費</div>
                         <div class="CenterMe-Vertical">
                             <div class="Content-Center Widget-Flex">
                                 <div class="Analize-InfoGraphic">
@@ -162,32 +157,32 @@
                                         <circle class="Analize-circle-base"></circle>
                                         <circle class="Analize-circle-line"></circle>
                                     </svg>
-                                    <div class="Analize-InfoGraphic-Number text-M text-Bold text-Matcha">2.0hr</div>
+                                    <div class="Analize-InfoGraphic-Number text-M text-Bold text-Matcha">33%</div>
                                 </div>
                                 <div class="Analize-Descripction">
                                     <div class="Analize-Euqale">
-                                        <div class="text-M Analize-Passing-Text text-Bold">已過去<span
-                                                class="Analize-Spendings-Text">2.0</span> 小時/ <span
-                                                class="Analize-Spendings-Text">4.0</span> 小時上限</div>
-                                        <div class="text-M Analize-Equale-Text">相當於做了
+                                        <div class="text-M Analize-Passing-Text text-Bold">已花費<span
+                                                class="Analize-Spendings-Text text-DarkGreen">$135</span>/今日限額<span
+                                                class="Analize-Spendings-Text">$300</span></div>
+                                        <div class="text-M Analize-Equale-Text">目前剩相當於
                                             <svg class="icon-Rep ThemeGreen">
-                                                <use href="#icon-Cup" />
+                                                <use href="#icon-Cake" />
                                             </svg>
-                                            <span class="Analize-Spendings-Text ThemeGreen text-Bold">抹茶粉</span>
-                                            的時間！
+                                            <span class="Analize-Spendings-Text ThemeGreen text-Bold">抹茶蛋糕</span>
+                                            的預算！
                                         </div>
                                     </div>
                                     <div class="Analize-Task-Color">
                                         <div class="Task-ColorDescription-Flex">
                                             <span class="Dot ThemeGreen"></span>
-                                            <span class="text-M text-Bold">執行任務
-                                                <br><span class="text-Normal">約1.5小時</span>
+                                            <span class="text-M text-Bold">已花費
+                                                <br><span class="text-Normal">午餐</span>
                                             </span>
                                         </div>
                                         <div class="Task-ColorDescription-Flex">
                                             <span class="Dot DarkGreen"></span>
-                                            <div class="text-M text-Bold">休息
-                                                <br><span class="text-Normal">約0.5小時</span>
+                                            <div class="text-M text-Bold">剩餘限額
+                                                <br><span class="text-Normal">晚餐或其他</span>
                                             </div>
                                         </div>
                                     </div>
@@ -201,29 +196,23 @@
             <div class="Container-Row2">
                 <div class="Widget">
                     <div class="Widget-Content">
-                        <div class="text-M text-Bold">待辦事項</div>
+                        <div class="text-M text-Bold">花費紀錄</div>
                         <div class="Content-Center">
                             <div role="region" tabindex="0">
                                 <table class="text-M">
                                     <thead>
                                         <tr>
                                             <th>名稱</th>
-                                            <th>預計時間</th>
-                                            <th>進度</th>
-                                            <th>預計</th>
+                                            <th>花費</th>
+                                            <th>歸類</th>
+                                            <th>註解</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>網頁程式設計</td>
-                                            <td>4小時</td>
-                                            <td>2小時</td>
-                                            <td>記得約老師</td>
-                                        </tr>
-                                        <tr>
-                                            <td>創意設計專題</td>
-                                            <td>-</td>
-                                            <td>-</td>
+                                            <td>日式便當</td>
+                                            <td>135元</td>
+                                            <td>午餐</td>
                                             <td>-</td>
                                         </tr>
                                     </tbody>
@@ -237,10 +226,10 @@
                 </div>
                 <div class="Widget weekly-Analize">
                     <div class="Widget-Content">
-                        <div class="text-M text-Bold">當週分析</div>
+                        <div class="text-M text-Bold"><span class="text-Matcha">12</span>月分析</div>
                         <div class="Content-Center">
-                            <div class="Total-Complete-Analize text-M">總完成度 <span
-                                    class="text-L text-Bold text-Matcha">25%</span></div>
+                            <div class="Total-Complete-Analize text-M">總限額 <span
+                                    class="text-L text-Bold text-Matcha">$8000</span></div>
                             <div class="ProgressBar">
                                 <div class="Stick-ToDo"></div>
                                 <div class="Stick-Done"></div>
@@ -248,14 +237,14 @@
                             <div class="Analize-Weekly-Color">
                                 <div class="Weekly-ColorDescription-Flex">
                                     <span class="Dot ThemeGreen"></span>
-                                    <span class="text-S text-Bold">已完成
-                                        <br><span class="text-Normal">網頁程式設計 2/4hr</span>
+                                    <span class="text-M text-Bold">總花費
+                                        <br><span class="text-Normal text-Matcha">$135</span>
                                     </span>
                                 </div>
                                 <div class="Weekly-ColorDescription-Flex">
                                     <span class="Dot DarkGreen"></span>
-                                    <div class="text-S text-Bold">未完成
-                                        <br><span class="text-Normal">創意設計專題</span>
+                                    <div class="text-M text-Bold">餘額
+                                        <br><span class="text-Normal text-DarkGreen">$7865</span>
                                     </div>
                                 </div>
                             </div>

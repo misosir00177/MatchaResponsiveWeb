@@ -154,13 +154,13 @@ a {
     font-family: 'Aboreto', serif;
 }
 
+
 .btn-S,
 .btn-M {
     display: flex;
     align-items: center;
     align-content: center;
     flex-shrink: 0;
-    border: 3px solid #1C8528;
     background: #1C8528;
     width: fit-content;
 }
@@ -201,9 +201,43 @@ a {
     display: flex;
 }
 
-.btn-Introduction{
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+.nav-btn-Introduction{
     border-bottom: #1C8528 solid 0.2vw;
 }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1C8528;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .hover-underline-animation.left::after {
+    transform-origin: bottom right;
+  }
 
 .header {
     display: flex;
@@ -311,6 +345,9 @@ a {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(270deg, #8BC24A 10.61%, #191919 48.01%);
+    animation: animateScrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .Intro-Text {
@@ -355,4 +392,15 @@ a {
     justify-content: center;
     align-items: center;
     margin: 5vw 0 0 0;
+}
+
+@keyframes animateScrolling {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }

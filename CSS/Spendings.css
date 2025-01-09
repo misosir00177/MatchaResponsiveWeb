@@ -32,7 +32,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
 }
 
 /* Text Style 
@@ -139,7 +138,36 @@ a {
     display: flex;
 }
 
-.btn-Productivity{
+.nav-btn-Introduction{
+    border-bottom: #1C8528 solid 0.2vw;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1C8528;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .hover-underline-animation.left::after {
+    transform-origin: bottom right;
+  }
+
+.btn-Spending{
     border-bottom: #1C8528 solid 0.2vw;
 }
 
@@ -192,31 +220,6 @@ a {
 .header-Button .spacer-BtnM {
     margin: 0 1vw 0 0;
 }
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #1C8528;
-    transition: transform 0.25s ease-out;
-  }
-
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .hover-underline-animation.left::after {
-    transform-origin: bottom right;
-  }
 
 .Burger-Menu{
     display: none;
@@ -424,6 +427,9 @@ table th, table td{
 }
 
 /* Progress Bar */
+
+
+
 .ProgressBar{
     position: relative;
     padding-top: 2vw;
@@ -431,14 +437,14 @@ table th, table td{
 
 .Stick-ToDo{
     position: absolute;
-    width: 20vw;
+    width: 18vw;
     height: 1vw;
     background: #1C8528;
 }
 
 .Stick-Done{
     position: absolute;
-    width: calc(20vw * 0.25);
+    width: calc(18vw * 0.25);
     height: 1vw;
     background: #8BC24A;
 }
@@ -582,7 +588,6 @@ table th, table td{
         gap: 10vw;
     }
 }
-
 @keyframes navLinksFade{
     0%{
         opacity: 0;
@@ -605,4 +610,3 @@ table th, table td{
 .toggle .line3{
     transform: rotate(45deg) translate(-0.35vw, -0.35vw);
 }
-
