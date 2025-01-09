@@ -417,6 +417,11 @@ table{
 
 table th, table td{
     text-align: center;
+    padding: 1vw;
+}
+
+.Total-Complete-Analize {
+    margin-top: 2vw;
 }
 
 .btn-NewTask{
@@ -431,14 +436,14 @@ table th, table td{
 
 .Stick-ToDo{
     position: absolute;
-    width: 20vw;
+    width: 30vw;
     height: 1vw;
     background: #1C8528;
 }
 
 .Stick-Done{
     position: absolute;
-    width: calc(20vw * 0.25);
+    width: calc(30vw * 0.25);
     height: 1vw;
     background: #8BC24A;
 }
@@ -548,7 +553,7 @@ table th, table td{
     .Analize-circle-base {
         position: absolute;
         fill: none;
-        stroke-width: 2vw;
+        stroke-width: 0.8vw;
         stroke: #8BC24A;
         stroke-dashoffset: 0;
         stroke-linecap: round;
@@ -560,7 +565,7 @@ table th, table td{
     .Analize-circle-line {
         position: absolute;
         fill: none;
-        stroke-width: 2vw;
+        stroke-width: 0.8vw;
         stroke-dasharray: 40vw;
         stroke-dashoffset: calc(40vw - (40vw * 50) / 100);
         stroke: #1C8528;
